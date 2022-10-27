@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding:0;
-  }
+}
 
 
 body {
@@ -36,9 +36,9 @@ nav {
     color: #fff;
     width: 100px;
     display: block;
-   padding: 25px 20px;
-   font-size: 15px;
-   font-weight: bold;
+    padding: 25px 20px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .navbar a:hover {
@@ -94,7 +94,7 @@ section{
 }
 
 .rebenque-image {
-    width: 600px;
+    width: 200px;
     height: 400px;
     margin-top: 10px;
     margin-bottom: 300px;
@@ -236,4 +236,61 @@ h3{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: larger;
+}
+
+/* GRID */
+
+.principal {
+    padding-top: 20px;
+    margin-top: 10vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px 80px 130px 80px 80px;
+    gap: 10px;
+    background-color: #2195f300;
+    padding: 10px;
+    grid-template-areas:
+    'contenido1 contenido1 contenido1'
+    'contenido2 contenido2 contenido2'
+    'contenido3 contenido3 contenido3'
+    'none none none'
+    'none none none'
+    'foto_rebenque contenido4 contenido4'
+    'foto_rebenque contenido4 contenido4'
+}
+
+.grid-container > div {
+    color: rgb(212, 212, 212) ;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.contenido1 {
+    grid-area: contenido1;
+}
+
+.contenido2 {
+    grid-area: contenido2;
+    height: 50%;
+}
+
+.contenido3 {
+    grid-area: contenido3;
+    height: 100%;
+}
+
+.contenido4 {
+    grid-area: contenido4;
+    height: 60%;
+}
+
+.foto_rebenque{
+    grid-area: foto_rebenque;
+    height: 450px;
+    width: 700px;
 }
