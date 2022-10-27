@@ -69,7 +69,6 @@ section{
 footer {
     background-color: rgba(15, 11, 11, 0.705);
     bottom: 0;
-    top: 0;
     width: 100%;
     height: 100px;
     margin-top: auto;
@@ -168,11 +167,7 @@ background-attachment: fixed;
     }
 
 .div-nosotros{
-    height: 200vh;
-}
-
-h3{
-    text-align: center;
+    height: 210vh;
 }
 
 /* PROPIEDADES SECTION */
@@ -193,14 +188,9 @@ h3{
     font-size: larger;
 }
 
-/* GRID */
+/* GRID - INDEX */ 
 
-.principal {
-    padding-top: 20px;
-    margin-top: 10vh;
-}
-
-.grid-container {
+.grid-container-index {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 80px 80px 130px 80px 80px;
@@ -217,7 +207,7 @@ h3{
     'foto_rebenque contenido4 contenido4'
 }
 
-.grid-container > div {
+.grid-container-index > div {
     color: rgb(212, 212, 212) ;
     text-align: center;
     padding: 20px 0;
@@ -248,4 +238,100 @@ h3{
     grid-area: foto_rebenque;
     height: 450px;
     width: 700px;
+}
+
+/* GRID - NOSOTROS */ 
+
+.grid-container-nosotros{
+    display: grid;
+    grid-template-columns: 390px 390px 390px;
+    grid-template-rows: 340px 340px 340px;
+    gap: 30px;
+    left: 25px;
+    padding: 10px;
+    grid-template-areas:
+    'lorem1 lorem2 lorem3'
+    'lorem4 lorem5 lorem6'
+    'lorem7 lorem8 lorem9'
+}
+
+.lorem1{
+    grid-area: lorem1;
+}
+
+.lorem2{
+    grid-area: lorem2;
+}
+
+.lorem3{
+    grid-area: lorem3;
+}
+
+.lorem4{
+    grid-area: lorem4;
+}
+
+.lorem5{
+    grid-area: lorem5;
+}
+
+.lorem6{
+    grid-area: lorem6;
+}
+
+.lorem7{
+    grid-area: lorem7;
+}
+
+.lorem8{
+    grid-area: lorem8;
+}
+
+.lorem9{
+    grid-area: lorem9;
+}
+
+.grid-container-nosotros > div {
+    text-align: center;
+    height: 100%;
+    font-size: 30px;
+    border: 4px solid #473d43;
+}
+
+@media only screen and (max-width: 1250px) {
+    .grid-container-nosotros {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+        'lorem1 lorem2'
+        'lorem3 lorem4'
+        'lorem5 lorem6'
+        'lorem7 lorem8'
+        'lorem9 lorem9';
+        padding: 10px;
+    }
+    .div-nosotros{
+        height: 150vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container-nosotros {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+        'lorem1'
+        'lorem2'
+        'lorem3'
+        'lorem4'
+        'lorem5'
+        'lorem6'
+        'lorem7'
+        'lorem8'
+        'lorem9';
+        padding: 10px;
+    }
+    .div-nosotros{
+        height: 250vh;
+    }
 }
