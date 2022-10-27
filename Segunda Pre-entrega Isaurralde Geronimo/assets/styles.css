@@ -66,51 +66,6 @@ section{
     background-attachment: fixed;
 }
 
-.titulo1{
-    margin-top: 40px;
-    text-align: center;
-    font-size: x-large;
-    font-family: 'Open Sans', sans-serif;
-    background-color: antiquewhite;   
-    margin-left: 500px;
-    margin-right: 500px;
-}
-
-.titulo2{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    background-color: antiquewhite;
-    margin-left: 500px;
-    margin-right: 500px;
-}
-
-.titulo3{
-    font-family: 'Roboto', sans-serif;
-    background-color: antiquewhite;
-    font-size: medium;
-    text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-
-.rebenque-image {
-    width: 200px;
-    height: 400px;
-    margin-top: 10px;
-    margin-bottom: 300px;
-    margin-left: 40px;
-}
-
-.rebenque-text{
-    margin-top: 100px;
-    margin-right: 100px;
-    text-align: center;
-    float: right;
-    width: 300px;
-    background-color: blanchedalmond;
-
-}
-
 footer {
     background-color: rgba(15, 11, 11, 0.705);
     bottom: 0;
