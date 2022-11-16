@@ -1,0 +1,17 @@
+{
+  "name": "segunda-pre-entrega-isaurralde-geronimo",
+  "version": "1.0.0",
+  "description": "Buenas, soy Geronimo Isaurralde y este es mi trabajo. Les resumo basicamente lo que hice para esta segunda entrega:\r -Primero le quise agregar grid y media query a dos de las cinco secciones, tal como pedia la consigna, en este caso las secciones que actualice fueron la de \"Propiedades\" y la de \"Nosotros\"\r La seccion Propiedades consiste en una especie de galeria que representaria los distintos inmuebles al a venta (ya que la pagina se ambienta,o al menos se intenta jaja, en una pagina de inmobiliaria).\r La seccion Nosotros consta de informacion tanto de la hipotetica inmobiliaria como de sus integrantes.\r -Segundo le agregue animacion a la seccion \"confianos tu inmueble\" la cual consiste en un formulario con informacion sobre un determinado terreno/casa/departamento.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss assets/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Geronimo Isaurralde",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
